@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const { getUsers, getUserById, createUser } = require('./queries')
+const { getUsers, getUserById, createUser, deleteUser, updateUser } = require('./queries')
 
 const bodyParser = require('body-parser')
 
@@ -22,6 +22,12 @@ app.get('/users/:id',getUserById)
 // @POST /users :createUser()=> Create new user entry in db
 
 app.post('/users',createUser)
+
+// @DELETE: /users/:id | deleteUser()
+app.delete('/users',deleteUser)
+
+// @PUT: /users/:id | updateUser()
+app.put('/users/:id',updateUser)
 
 app.listen(2100,()=>{
     console.log("At 2100")
