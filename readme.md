@@ -1,5 +1,5 @@
 # CRUD API 
-This repository has been created to maintain and record the learnings and its implementation.
+This repository has been created to maintain and record the learnings and its implementation related to CRUD APIs.
 
 It is following a simple workspace structure:
 - index.js file is the entry point and is the main file.
